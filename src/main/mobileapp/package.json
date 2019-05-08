@@ -1,0 +1,12 @@
+{
+  "name": "io.cronapp.apps.projetounifacsaulablocosemobile",
+  "displayName": "ProjetoUnifacs - aula Blocos e Mobile",
+  "version": "1.0.0",
+  "description": "ProjetoUnifacs - aula Blocos e Mobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CronApp IDE",
+  "license": "Apache-2.0"
+}
