@@ -55,7 +55,6 @@
   "Users.view.Add A New User": "Add a new user",
   "Users.view.RemoverUsuario": "Are you sure you want to remove this user?",
   "Users.view.Roles": "Roles",
-  "Users.view.Users": "Users",
   "Users.view.Senha": "Password",
   "Users.view.Confirmacao": "Confirmation",
   "Users.view.ConfirmeSuaSenha": "Confirm your password",
@@ -99,5 +98,7 @@
   "Permission.view.Salvar": "Save",
   "Permission.view.Voltar": "Cancel",
   "template.crud.clickToAddImage": "Click to add image",
-  "template.crud.clickToAddFile": "Click to add file"
+  "template.crud.clickToAddFile": "Click to add file",
+  "Users.view.Users": "Odd",
+  "Impares": "Odd"
 }
