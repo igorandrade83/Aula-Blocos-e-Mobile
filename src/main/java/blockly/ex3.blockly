@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/mobileapp/www/views/logged/impares.view.html" resourceType="JAVA" ruleDescription="MaiorNumero" ruleName="MaiorNumero" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="473.39999999999964" scrolly="-55.89999999999941" target="Anb:u5+^,0vLkL9QIqn5"/>
-  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-352" y="113">
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/numeroImpares.view.html" resourceType="JAVA" ruleDescription="MaiorNumero" ruleName="MaiorNumero" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="564.73984375" scrolly="-31.899999999999977" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-431" y="112">
     <field name="NAME">ValoresImpares</field>
     <comment h="80" pinned="false" w="160">MaiorNumero</comment>
     <statement name="STACK">
@@ -34,36 +34,40 @@
               </block>
             </value>
             <next>
-              <block colour="#5ba55b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Z7i_I|*oc2Lo|DZEq2su" origintype="controls_for" output="false" tooltip="Faça algumas instruções várias vezes." type="controls_for">
-                <field name="VAR">i</field>
-                <value name="FROM">
-                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZVEYE5UDFoWdk}/h+LS|" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                    <field name="NUM">1</field>
-                  </shadow>
-                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="cof/$6X9LQ=2$Ww?DyBs" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">item01</field>
+              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=":%ynTUuxbu?{t/;DAKnM" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">impares</field>
+                <value name="VALUE">
+                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=";?xN:u{-6_p:0.|2$+w7" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"/>
                   </block>
                 </value>
-                <value name="TO">
-                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4R;Dho~6Q9wvC`[CE#L?" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                    <field name="NUM">10</field>
-                  </shadow>
-                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="e-W[efv0`^DWWY(~Ujs#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">item02</field>
-                  </block>
-                </value>
-                <value name="BY">
-                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*Nl*7(_L}?sx=?V1Dx)S" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                    <field name="NUM">1</field>
-                  </shadow>
-                </value>
-                <statement name="DO">
-                  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="rBc(}.=E|r|=FD-(]#lo" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
-                    <value name="IF0">
-                      <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="fe2WqFsKGf|w6QOn8-){" origintype="logic_operation" output="true" tooltip="Retorna verdadeiro se ambas as entradas forem iguais." type="logic_operation">
-                        <mutation items="2"/>
-                        <field name="OP1">AND</field>
-                        <value name="ARG0">
+                <next>
+                  <block colour="#5ba55b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Z7i_I|*oc2Lo|DZEq2su" origintype="controls_for" output="false" tooltip="Faça algumas instruções várias vezes." type="controls_for">
+                    <field name="VAR">i</field>
+                    <value name="FROM">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZVEYE5UDFoWdk}/h+LS|" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="cof/$6X9LQ=2$Ww?DyBs" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">item01</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4R;Dho~6Q9wvC`[CE#L?" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">10</field>
+                      </shadow>
+                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="e-W[efv0`^DWWY(~Ujs#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">item02</field>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*Nl*7(_L}?sx=?V1Dx)S" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <statement name="DO">
+                      <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$W2{3$1L2ba_Hh]gC4Jh" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                        <value name="IF0">
                           <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="@#$B!gGUYtm4^!Ev~-NR" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
                             <field name="OP">NEQ</field>
                             <value name="A">
@@ -90,55 +94,31 @@
                             </value>
                           </block>
                         </value>
-                        <value name="ARG1">
-                          <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="xvp(qLdRLBR)+eq3]Wcl" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
-                            <field name="OP">NEQ</field>
-                            <value name="A">
-                              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ye8cHyLufo7E4kpu/;3J" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                <field name="VAR">i</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="/#=z)JV`)8Bo@B)+c|Dr" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                <field name="NUM">0</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <statement name="DO0">
-                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="hbgF8_])DIIy)NNiI1Ew" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-                        <field name="VAR">impares</field>
-                        <value name="VALUE">
-                          <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T%Tw4/,sd:UBGg$Ez%-V" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
-                            <mutation items="2"/>
-                            <value name="ADD0">
-                              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4!_FfglclcVY+]8x%cN9" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                <field name="VAR">i</field>
-                              </block>
-                            </value>
-                            <value name="ADD1">
-                              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="jdO!AbB$Ay}$nU{g+m29" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                                <field name="TEXT">, </field>
+                        <statement name="DO0">
+                          <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Gin`8C=6YdIk7[WhuPK3" origintype="text_append" output="false" tooltip="function() {&#10;      return Blockly.Msg.TEXT_APPEND_TOOLTIP.replace('%1', thisBlock.getFieldValue('VAR'));&#10;    }" type="text_append">
+                            <field name="VAR">impares</field>
+                            <value name="TEXT">
+                              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="u$BgE6$FlM*TaK+rU/.s" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"/>
+                              </shadow>
+                              <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="T%Tw4/,sd:UBGg$Ez%-V" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                <mutation items="2"/>
+                                <value name="ADD0">
+                                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4!_FfglclcVY+]8x%cN9" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">i</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="jdO!AbB$Ay}$nU{g+m29" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field name="TEXT">, </field>
+                                  </block>
+                                </value>
                               </block>
                             </value>
                           </block>
-                        </value>
+                        </statement>
                       </block>
                     </statement>
-                  </block>
-                </statement>
-                <next>
-                  <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",(XZ:[XfNFWv5kvlm!)3" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
-                    <value name="TEXT">
-                      <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="dc%:8CZMYqI./@|#X]#5" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                        <field name="TEXT">abc</field>
-                      </shadow>
-                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="3py/`$pm(~A~QDE_ED-." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                        <field name="VAR">impares</field>
-                      </block>
-                    </value>
                     <next>
                       <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="U=TArd81[hmpogq3(N1S" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.changeValueOfField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.changeValueOfField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
                         <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
@@ -147,14 +127,14 @@
                         </mutation>
                         <value name="ARG0">
                           <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="qBLipObBDFbPggp#C(*J" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
-                            <field name="SELECT">vars.textarea3327</field>
+                            <field name="SELECT">vars.textarea3323</field>
                           </block>
                         </value>
                         <value name="ARG1">
                           <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Nt9.}4$bc#Amzm~LMmoa" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
                             <field name="TEXT">hauishdioahsdiuhasiduh</field>
                           </shadow>
-                          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="BBTk-wqngr|_BPQHTvQ$" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="VI]*f}Fcj^-ceod5fSzy" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
                             <field name="VAR">impares</field>
                           </block>
                         </value>
@@ -166,6 +146,29 @@
             </next>
           </block>
         </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4q,N!g8xKsrkV}viR;Y`" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if" x="818" y="458">
+    <value name="IF0">
+      <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Ox,/]/(1`hHf*xtb]~r~" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+        <mutation name="{{cronapi.logic.Operations.isNullOrEmpty}}" return-raw-type="cronapi.Var">
+          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="{=Y{^xBQfE`]sL~RGlio" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field name="VAR">item01</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P~Zu:w_pM/ZcYY{YWr8c" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+        <value name="TEXT">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="3PZyD`1yP0m]q~~?w1^E" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">abcd</field>
+          </shadow>
+        </value>
       </block>
     </statement>
   </block>
