@@ -82,8 +82,8 @@
   "template.crud.actions": "Actions",
   "template.crud.load_more": "Load more",
   "template.crud.new": "New",
-  "template.crud.clickOrDragAnImage":"Click or drag an image",
-  "template.crud.clickOrDragAnFile":"Click or drag an file",
+  "template.crud.clickOrDragAnImage": "Click or drag an image",
+  "template.crud.clickOrDragAnFile": "Click or drag an file",
   "template.view.search": "Consulta",
   "ChooseTheme": "Choose Theme",
   "Theme": "Theme",
@@ -97,5 +97,6 @@
   "Home.view.Department": "Department",
   "Home.view.PreviousPasswordCanNotBeEmpty": "Previous password can not be empty.",
   "Home.view.NewPasswordCanNotBeEmpty": "New password can not be empty.",
-  "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmation can not be empty."
+  "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmation can not be empty.",
+  "Button": "Registration"
 }

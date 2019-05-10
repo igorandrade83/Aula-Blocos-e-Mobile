@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/numeroImpares.view.html" resourceType="JAVA" ruleDescription="MaiorNumero" ruleName="MaiorNumero" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="564.73984375" scrolly="-31.899999999999977" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="567.1" scrolly="-64.89999999999986" target="Anb:u5+^,0vLkL9QIqn5"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-431" y="112">
     <field name="NAME">ValoresImpares</field>
     <comment h="80" pinned="false" w="160">MaiorNumero</comment>
@@ -68,28 +68,35 @@
                     <statement name="DO">
                       <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$W2{3$1L2ba_Hh]gC4Jh" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
                         <value name="IF0">
-                          <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="@#$B!gGUYtm4^!Ev~-NR" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
-                            <field name="OP">NEQ</field>
-                            <value name="A">
-                              <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Jw_Jg)YcR04XHm._LF-?" origintype="math_modulo" output="true" tooltip="Retorna o resto da divisão de dois números." type="math_modulo">
-                                <value name="DIVIDEND">
-                                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="vgBZe-SEjndB_rJtZCro" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                    <field name="NUM">64</field>
+                          <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7I/9(zI`!14-$`Zm.UO+" origintype="logic_operation" output="true" tooltip="Retorna verdadeiro se ambas as entradas forem iguais." type="logic_operation">
+                            <mutation items="2"/>
+                            <field name="OP1">AND</field>
+                            <value name="ARG0">
+                              <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Ctrf$eKP$ZxV.Nm}5pzl" origintype="math_number_property" output="true" tooltip="Verifica se um número é par, ímpar, inteiro, positivo, negativo, ou se é divisível por outro número.  Retorna verdadeiro ou falso." type="math_number_property">
+                                <mutation divisor_input="false"/>
+                                <field name="PROPERTY">ODD</field>
+                                <value name="NUMBER_TO_CHECK">
+                                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="F_XR[jdJw,S/]Fnpkzun" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                    <field name="NUM">0</field>
                                   </shadow>
                                   <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="w7B6r2Z6B_H`8To;m,O/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
                                     <field name="VAR">i</field>
                                   </block>
                                 </value>
-                                <value name="DIVISOR">
-                                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="S$xaHdf72mPqGsfXOk_g" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                    <field name="NUM">2</field>
-                                  </shadow>
-                                </value>
                               </block>
                             </value>
-                            <value name="B">
-                              <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="K46U/8aRU8|VmM[8v4Ng" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                <field name="NUM">0</field>
+                            <value name="ARG1">
+                              <block colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5_9-s3]O!`IQ:`4]PfSo" origintype="math_number_property" output="true" tooltip="Verifica se um número é par, ímpar, inteiro, positivo, negativo, ou se é divisível por outro número.  Retorna verdadeiro ou falso." type="math_number_property">
+                                <mutation divisor_input="false"/>
+                                <field name="PROPERTY">POSITIVE</field>
+                                <value name="NUMBER_TO_CHECK">
+                                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="F_XR[jdJw,S/]Fnpkzun" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number" xmlns="">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="tDf/R{4B,^zN2/9@SZky" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">i</field>
+                                  </block>
+                                </value>
                               </block>
                             </value>
                           </block>

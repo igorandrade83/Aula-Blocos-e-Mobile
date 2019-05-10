@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 
 
 @CronapiMetaData(type = "blockly")
-@CronappSecurity
+@CronappSecurity(post = "Public", execute = "Public")
 public class Ex4 {
 
 public static final int TIMEOUT = 300;
@@ -20,10 +20,8 @@ public static Var Executar() throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {
-    System.out.println(cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.input5077_senha")).getObjectAsString());
-    System.out.println(cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.input3854_nome")).getObjectAsString());
-    System.out.println(cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.input3912_login")).getObjectAsString());
-    System.out.println(cronapi.util.Operations.generateUUID().getObjectAsString());
+    cronapi.database.Operations.insert(Var.valueOf("app.entity.User"),Var.valueOf("password",cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.input5077_senha"))),Var.valueOf("name",cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.input3854_nome"))),Var.valueOf("login",cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.input3912_login"))));
+    cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/login"));
     return Var.VAR_NULL;
    }
  }.call();

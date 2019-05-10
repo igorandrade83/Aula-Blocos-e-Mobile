@@ -36,7 +36,7 @@ public static Var ValoresImpares() throws Exception {
     for (i = Var.valueOf(item01);
         i_inc.getObjectAsInt() >= 0 ? i.getObjectAsLong() <= item02.getObjectAsLong() : i.getObjectAsLong()  >= item02.getObjectAsLong();
     i.inc(i_inc))  {
-        if (Var.valueOf(!cronapi.math.Operations.mod(i, Var.valueOf(2)).equals(Var.valueOf(0))).getObjectAsBoolean()) {
+        if (Var.valueOf(cronapi.math.Operations.isOdd(i).getObjectAsBoolean() && cronapi.math.Operations.isPositive(i).getObjectAsBoolean()).getObjectAsBoolean()) {
             impares.append(Var.valueOf(i.toString() + Var.valueOf(", ").toString()).toString());
         }
     } // end for
